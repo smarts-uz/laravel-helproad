@@ -67,9 +67,9 @@
 <div class="flex flex-wrap justify-center px-12">
 <div class="owl-carousel owl-theme">
     @foreach ($reviews as $review)
-    <div class="item w-1/2 border-2 border-white shadow-2xl w-full px-4 my-8 lg:p-8">
+    <div class="item w-2 border-2 border-white shadow-2xl w-full px-4 my-8 lg:p-4">
         <img class="w-16 h-16"  src="https://auto-help-spb.ru/images/feedback-icon.svg" alt="">
-        <p class="my-6">{{$review->text}}</p>
+        <p class="my-6 h-32 mb-20">{{$review->text}}</p>
         <p class="font-extrabold">{{$review->name}}</p>
         <p>{{$review->getDate()}}</p>
     </div>

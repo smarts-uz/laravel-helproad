@@ -41,7 +41,7 @@ body {font-size: 16px; font-weight: 500; font-family: 'Montserrat', sans-serif;}
 .owl-next span:hover, .owl-prev span:hover{color: black;}
 </style>
 <body class="overflow-x-hidden">
-    <div style="height: 150vh;" class="navContainer md:w-1/2 w-full flex-col flex-wrap h-screen justify-center items-center bg-black text-white w-25 p-3 z-10 absolute left-0 top-0 hidden ">
+    <div style="height: 150vh;" class="navContainer md:w-1/2 w-full flex-col flex-wrap h-60 justify-center items-center bg-black text-white w-25 p-3 z-10 absolute left-0 top-0 hidden ">
         <div  class="text-5xl absolute top-0 right-0 mr-6 cursor-pointer"><span onclick="closeNav()"> x </span></div>
         <ul class="text-white mt-6 inline-block items-center cursor-pointer  text-2xl">
           <span class="border-b-2  hover:border-orange-500">  Услуги </span> <span onclick="openSubMenu()" class="plus text-4xl ml-4 hover:text-blue-500">+</span>
@@ -64,13 +64,13 @@ body {font-size: 16px; font-weight: 500; font-family: 'Montserrat', sans-serif;}
  </div>
 <!-- Fixed contact logos -->
 <div class=" w-32 z-40 fixed flex justify-between bottom-0 left-0 " style=" margin-left: 20px; margin-bottom: 20px;">
-    <div>
-    <a class="cursor-pointer" href="#"><img src="https://auto-help-spb.ru/images/section-messangers/whatsapp.png" alt=""></a>
+    <div class="mr-1">
+    <a class="cursor-pointer" href="tel:+79067031111"><img src="https://auto-help-spb.ru/images/section-messangers/whatsapp.png" alt=""></a>
     </div>
-    <div>
-    <a class="cursor-pointer" href="#"><img src="https://auto-help-spb.ru/images/section-messangers/telegram.png" alt=""></a>
+    <div class="mr-2">
+    <a class="cursor-pointer" href="tel:+79067031111"><img src="https://auto-help-spb.ru/images/section-messangers/telegram.png" alt=""></a>
     </div><div>
-    <a class="cursor-pointer" href="#"><img src="https://auto-help-spb.ru/images/section-messangers/viber.png" alt=""></a>
+    <a class="cursor-pointer" href="tel:+79067031111"><img src="https://auto-help-spb.ru/images/section-messangers/viber.png" alt=""></a>
     </div>
 </div>
 <!-- Fixed contact logos -->
@@ -78,7 +78,7 @@ body {font-size: 16px; font-weight: 500; font-family: 'Montserrat', sans-serif;}
     <div>
       
         <div>
-    <header class="pt-2 bg-black">
+    <header class="pt-2 bg-black"   >
               <!-- Root element for center items -->
 <div class="orderCallForm flex flex-col opacity-60 bg-gray-900 h-full fixed w-full z-10 hidden">
     <!-- Auth Card Container -->

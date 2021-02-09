@@ -3,11 +3,12 @@
 @section('content')
     
     <!-- main page -->
+    <img style="z-index: -10; background" src="https://auto-help-spb.ru/images/top/index.jpg" class="bg-contain bg-center object-fit absolute" alt="">
 <div class="header font-bold lg:text-5xl md:text-3xl text-xl mt-16 mx-6 md:mx-24">
-     <h1 class="text">{{$service->title}} В МОСКВЕ</h1>
-     <h1 class="text"> ОТ <span class="text-orange-600"> {{$service->price}} РУБЛЕЙ </span></h1>
+     <h1 class="text-white">{{$service->title}} В МОСКВЕ</h1>
+     <h1 class="text-white"> ОТ <span class="text-orange-600"> {{$service->price}} РУБЛЕЙ </span></h1>
      </div>
-     <ul class="text-sm md:text-lg lg:xl flex-col items-center justify-evenly text mt-10 mx-6 md:mx-24">
+     <ul class="text-sm md:text-lg lg:xl flex-col items-center justify-evenly text-white mt-10 mx-6 md:mx-24">
          <li><i class="fas fa-angle-double-right pr-4 text-orange-600 mt-4"></i>Возникла непредвиденная ситуация с авто?</li>
          <li><i class="fas fa-angle-double-right pr-4 text-orange-600 mt-4"></i>Нужно срочно ехать?</li>
          <li><i class="fas fa-angle-double-right pr-4 text-orange-600 mt-4"></i>Предлагаем любую автопомощь!</li>
@@ -38,7 +39,7 @@
  </div>
  <div class="h-full w-full bg-white">
  <div class="w-4/5 m-auto flex justify-center text-center flex-wrap items-center">
-         <div class=" flex-col items-center justify-evenly my-8 flex ml-4">
+         <div class=" flex-col items-center mr-20 justify-evenly my-8 flex">
              <img src="https://auto-help-spb.ru/images/work-3.png" alt="">
              <h4 class='mt-6 font-extrabold'>Работаем 24 часа в сутки</h4>
              <p class='mt-2'>Приезжаем, чтобы спасти <br>
@@ -46,7 +47,7 @@
                  Без перерывов  <br>
                  и выходных. </p>
          </div>
-         <div class=" my-8 flex ml-4 flex-col items-center justify-evenly">
+         <div class=" my-8 flex mr-20 flex-col items-center justify-evenly">
              <img src="https://auto-help-spb.ru/images/adv-2_1.svg" alt="">
              <h4 class='mt-6 font-extrabold'>Приезжаем за 15 минут</h4>
              <p class='mt-2'>Приезжаем, чтобы спасти <br>
@@ -54,7 +55,7 @@
                  Без перерывов  <br>
                  и выходных. </p>
          </div>
-         <div class=" my-8 flex ml-4 flex-col items-center justify-evenly">
+         <div class=" my-8 flex mr-20 flex-col items-center justify-evenly">
              <img src="https://auto-help-spb.ru/images/adv-3_1.svg" alt="">
              <h4 class='mt-6 font-extrabold'>Фиксированные цены</h4>
              <p class='mt-2'>Приезжаем, чтобы спасти <br>
@@ -62,7 +63,7 @@
                  Без перерывов  <br>
                  и выходных. </p>
          </div>
-         <div class=" my-8 flex ml-4 flex-col items-center justify-evenly">
+         <div class=" my-8 flex flex-col items-center justify-evenly">
              <img src="https://auto-help-spb.ru/images/adv-4_1.svg" alt="">
              <h4 class='mt-6 font-extrabold'>Опыт мастеров - 15 лет</h4>
              <p class='mt-2'>Приезжаем, чтобы спасти <br>
@@ -100,8 +101,8 @@
  </div>
      </div>
     <div class=" mx-4 lg:mx-16 bg-white py-16">
-        <div class="flex items-center flex-wrap">
-            <div class="md:w-1/2 w-full">
+        <div style="display: flex; justify-content:space-between; align-items:center">
+            <div class="md:w-1/2 p-6 w-full">
          <p class="">Как часто бывает, автомобиль ломается в самый неподходящий момент. Не каждый может починить машину самостоятельно, качественно и быстро. Не всегда под рукой окажутся инструменты или запчасти, требуемые для устранения неполадок. Специалисты компании «Автопомощь» в Спб могут исправить большинство поломок на месте.</p>
          <br>
          <p class="">Мы оказываем широкий спектр ремонтных услуг круглосуточно, имеет фиксированные цены, опытных и быстро реагирующих мастеров. Стоимость работы ниже рыночных на 10-20 %. Современные способы связи, с помощью которых можно четко определить объем работы, сокращают время ожидания. В отдельных случаях применяется эвакуация машины до места назначения.</p>
@@ -226,9 +227,9 @@
          <div class="flex text-center justify-center items-center flex-wrap">
              <div class="owl-carousel owl-theme">
                  @foreach ($services as $service)
-                    <div class="item shadow-2xl  lg:ml-10 border-2 border-white px-24 md:px-12 my-10 lg:px-8 sm:py-8 hover:border-orange-500"> 
+                    <div class="item shadow-2xl lg:ml-10 border-2 border-white px-24 md:px-12 my-10 lg:px-8 sm:py-8 hover:border-orange-500"> 
                         <img class='rounded-full' src="{{$service->getImage()}}" alt="">
-                        <p class="py-4">{{$service->title}}</p>
+                        <p class="py-4 h-10 mb-16">{{$service->title}}</p>
                         <p  class=" py-4 font-extrabold text-lg">от {{$service->price}} руб.</p>
                         <button onclick="orderFormBtn()" class="font-extrabold text-blue-500 border-2 border-blue-500 py-2 px-10 hover:bg-blue-500 hover:text-white transition duration-300">Заказать</button>
                     </div>
